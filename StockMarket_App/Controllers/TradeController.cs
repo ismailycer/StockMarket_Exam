@@ -102,7 +102,6 @@ namespace StockMarket_App.Controllers
    List<BuyOrderResponse> buyOrderResponses = _stocksService.GetBuyOrders();
    List<SellOrderResponse> sellOrderResponses = _stocksService.GetSellOrders();
 
-
    Orders orders = new Orders() { BuyOrders = buyOrderResponses, SellOrders = sellOrderResponses };
 
    ViewBag.TradingOptions = _tradingOptions;
